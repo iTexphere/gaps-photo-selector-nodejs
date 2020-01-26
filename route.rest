@@ -1,0 +1,18 @@
+GET http://localhost:8080/images
+
+
+###
+POST  http://localhost:8080/images/saveSelectedImages
+Content-Type: application/json
+
+{
+    "selectedImages": [{"id":"5", "src":"url1"},{"id":"2", "src":"url2"}]
+}
+
+###
+POST  http://localhost:8080/images/saveSelectedImages
+Content-Type: application/json
+
+{
+    "selectedImages": [{"id":"x", "src":"url1"},{"id":"2", "src":"url2"}]
+}
